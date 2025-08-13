@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "@devmarks/shared",
   "version": "1.0.0",
   "scripts": {
     "start": "nest start"
