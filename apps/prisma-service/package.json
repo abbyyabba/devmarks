@@ -4,15 +4,17 @@
   "private": true,
   "scripts": {
     "queries": "ts-node ./src/queries.ts",
-    "caching": "ts-node ./src/caching.ts"
+    "caching": "ts-node ./src/caching.ts",
+    "seed": "ts-node prisma/seed.ts",
+    "migrate": "prisma migrate dev"
   },
   "dependencies": {
     "@prisma/client": "6.13.0",
     "@prisma/extension-accelerate": "2.0.2",
-    "@types/node": "22.15.32",
     "dotenv": "16.6.1"
   },
   "devDependencies": {
+    "@types/node": "22.15.32",
     "prisma": "6.9.0",
     "ts-node": "10.9.2",
     "typescript": "5.8.2"

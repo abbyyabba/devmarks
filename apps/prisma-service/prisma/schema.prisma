@@ -11,23 +11,14 @@ model User {
   id      Int      @id @default(autoincrement())
   email   String   @unique
   name    String?
-  posts   Post[]
   bookmarks Bookmark[]
-}
-
-model Post {
-  id        Int     @id @default(autoincrement())
-  title     String
-  content   String?
-  published Boolean @default(false)
-  author    User?   @relation(fields: [authorId], references: [id])
-  authorId  Int?
 }
 
 model Bookmark {
   id Int @id @default(autoincrement())
   url String
   title String?
+  preview String?
   owner User? @relation(fields: [ownerId], references: [id])
   ownerId Int?
 }
