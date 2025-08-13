@@ -66,13 +66,13 @@ importers:
       '@prisma/extension-accelerate':
         specifier: 2.0.2
         version: 2.0.2(@prisma/client@6.13.0(prisma@6.9.0(typescript@5.8.2))(typescript@5.8.2))
-      '@types/node':
-        specifier: 22.15.32
-        version: 22.15.32
       dotenv:
         specifier: 16.6.1
         version: 16.6.1
     devDependencies:
+      '@types/node':
+        specifier: 22.15.32
+        version: 22.15.32
       prisma:
         specifier: 6.9.0
         version: 6.9.0(typescript@5.8.2)
